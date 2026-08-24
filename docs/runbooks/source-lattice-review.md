@@ -29,8 +29,8 @@ Review a chapter or card using source-floor-first discipline for LLM and human r
 ## Validation
 
 - No unsupported live-event claims from seed commentary alone
-- `ph-civ show <source_id>` sections present
-- `ph-civ bridge <source_id>` if pattern routing applies
+- `predictive-history show <source_id>` sections present
+- `predictive-history bridge <source_id>` if pattern routing applies
 
 ## Stop conditions
 

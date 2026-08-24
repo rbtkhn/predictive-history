@@ -9,7 +9,7 @@
 Curate public transcript bodies under:
 
 - **Interviews:** `interviews/interview-YYYY-MM-DD-{host-slug}/`
-- **Lectures:** `lectures/{series}/{source_id}/` (147 packets across five series — see [`lectures/README.md`](../../lectures/README.md))
+- **Lectures:** `lectures/{series}/{source_id}/` (150 packets across five series — see [`lectures/README.md`](../../lectures/README.md))
 
 Shared work:
 

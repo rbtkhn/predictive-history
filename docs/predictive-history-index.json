@@ -1,9 +1,9 @@
 {
   "schema_version": 5,
   "primary_artifact": "namespace_catalog",
-  "fingerprint": "46b915d55d0ac168",
-  "card_count": 206,
-  "transcript_word_total": 1451405,
+  "fingerprint": "7193426dbd0264f7",
+  "card_count": 209,
+  "transcript_word_total": 1473477,
   "ssot": "data/cards.jsonl",
   "markdown_index": "docs/predictive-history-index.md",
   "catalog_hub": {
@@ -14,7 +14,7 @@
     "lectures": {
       "markdown": "lectures/predictive-history-lecture-index.md",
       "json": "lectures/predictive-history-lecture-index.json",
-      "card_count": 147
+      "card_count": 150
     },
     "essays": {
       "markdown": "essays/predictive-history-essay-index.md",
@@ -105,8 +105,8 @@
       "transcript_word_total": 120345
     },
     "great-books": {
-      "chapter_count": 10,
-      "transcript_word_total": 55562
+      "chapter_count": 13,
+      "transcript_word_total": 77634
     },
     "interviews": {
       "chapter_count": 16,
@@ -121,14 +121,14 @@
     "ph-civ": {
       "part": "civilization",
       "volume_label": "Volume I — Civilization (law discovery)",
-      "chapter_count": 121,
+      "chapter_count": 124,
       "series_counts": {
         "civilization": 60,
         "essays": 43,
         "game-theory": 8,
-        "great-books": 10
+        "great-books": 13
       },
-      "transcript_word_total": 696961
+      "transcript_word_total": 719033
     },
     "ph-apo": {
       "part": "world-war",
@@ -2561,6 +2561,74 @@
       "scaffold_version": "ph_civ_commentary_canvas_v2",
       "migration_source": "extracted_from_part",
       "deprecated_part_routing": true
+    },
+    {
+      "source_id": "gb-11",
+      "title": "Great Books #11: Dante's Revolution",
+      "part": "civilization",
+      "surface": "ph-civ",
+      "volume_label": "Volume I — Civilization (law discovery)",
+      "series": "great-books",
+      "review_status": "in_review",
+      "placement_weight": "strong",
+      "paths": {
+        "transcript": "lectures/great-books/gb-11/gb-11-transcript.md",
+        "commentary": "lectures/great-books/gb-11/gb-11-commentary.md",
+        "folder": "lectures/great-books/gb-11",
+        "folder_readme": "lectures/great-books/gb-11/README.md"
+      },
+      "transcript_word_count": 9117,
+      "publication_date": "2026-05-26",
+      "source_video_url": "https://www.youtube.com/watch?v=otyUpKhpTYM",
+      "commentary_maturity": "l3_falsifiers",
+      "scaffold_version": "ph_civ_commentary_canvas_v2",
+      "migration_source": "extracted_from_part",
+      "deprecated_part_routing": true
+    },
+    {
+      "source_id": "gb-12",
+      "title": "Great Books #12: Dante in Paradise",
+      "part": "civilization",
+      "surface": "ph-civ",
+      "volume_label": "Volume I — Civilization (law discovery)",
+      "series": "great-books",
+      "review_status": "in_review",
+      "placement_weight": "strong",
+      "paths": {
+        "transcript": "lectures/great-books/gb-12/gb-12-transcript.md",
+        "commentary": "lectures/great-books/gb-12/gb-12-commentary.md",
+        "folder": "lectures/great-books/gb-12",
+        "folder_readme": "lectures/great-books/gb-12/README.md"
+      },
+      "transcript_word_count": 6735,
+      "publication_date": "2026-05-26",
+      "source_video_url": "https://www.youtube.com/watch?v=FspDllFoiDE",
+      "commentary_maturity": "l3_falsifiers",
+      "scaffold_version": "ph_civ_commentary_canvas_v2",
+      "migration_source": "extracted_from_part",
+      "deprecated_part_routing": true
+    },
+    {
+      "source_id": "gb-13",
+      "title": "Great Books #13: Gay Talese's Sparks of Light",
+      "part": "civilization",
+      "surface": "ph-civ",
+      "volume_label": "Volume I — Civilization (law discovery)",
+      "series": "great-books",
+      "review_status": "in_review",
+      "placement_weight": "strong",
+      "paths": {
+        "transcript": "lectures/great-books/gb-13/gb-13-transcript.md",
+        "commentary": "lectures/great-books/gb-13/gb-13-commentary.md",
+        "folder": "lectures/great-books/gb-13",
+        "folder_readme": "lectures/great-books/gb-13/README.md"
+      },
+      "transcript_word_count": 6220,
+      "publication_date": "2026-05-29",
+      "source_video_url": "https://www.youtube.com/watch?v=VWmPHHnZuiw",
+      "commentary_maturity": "scaffold",
+      "scaffold_version": "ph_civ_commentary_canvas_v1",
+      "deprecated_part_routing": false
     },
     {
       "source_id": "geo-01",

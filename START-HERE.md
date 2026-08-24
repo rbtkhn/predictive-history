@@ -4,15 +4,15 @@
 
 If someone pastes `https://github.com/rbtkhn/predictive-history` into a ChatGPT chat or any other LLM, start here.
 
-This repository is the public **Predictive History** distribution layer — a **namespace catalog hub** (206 public chapters) with lecture, essay, and interview slice indexes. It is not a private workshop and not a media vault. The repo is designed so a reader and an LLM can unfold the experience together from public files only.
+This repository is the public **Predictive History** distribution layer — a **namespace catalog hub** (209 public chapters) with lecture, essay, and interview slice indexes. It is not a private workshop and not a media vault. The repo is designed so a reader and an LLM can unfold the experience together from public files only.
 
-Legacy **two-volume ph-civ / ph-apo** framing (Volume I Civilization / Volume II Apocalypse) is **deprecated** for onboarding; see [`docs/archive/two-volume-ph-civ-apo-deprecated.md`](docs/archive/two-volume-ph-civ-apo-deprecated.md). Card `part`, route `surface`, and the `ph-civ` CLI name remain for compatibility.
+Legacy **two-volume ph-civ / ph-apo** framing (Volume I Civilization / Volume II Apocalypse) is **deprecated** for onboarding; see [`docs/archive/two-volume-ph-civ-apo-deprecated.md`](docs/archive/two-volume-ph-civ-apo-deprecated.md). Card `part` and route `surface` remain as legacy metadata; the supported CLI is `predictive-history`.
 
 ## What This Is
 
 - **Primary artifact:** `namespace_catalog` — [`docs/predictive-history-index.md`](docs/predictive-history-index.md) · [`docs/predictive-history-index.json`](docs/predictive-history-index.json)
-- **Slice indexes:** [`lectures/predictive-history-lecture-index.md`](lectures/predictive-history-lecture-index.md) (147) · [`essays/predictive-history-essay-index.md`](essays/predictive-history-essay-index.md) (43) · [`interviews/predictive-history-interview-index.md`](interviews/predictive-history-interview-index.md) (16)
-- **SSOT:** [`data/cards.jsonl`](data/cards.jsonl) — all 206 cards; legacy `part` and paths unchanged
+- **Slice indexes:** [`lectures/predictive-history-lecture-index.md`](lectures/predictive-history-lecture-index.md) (150) · [`essays/predictive-history-essay-index.md`](essays/predictive-history-essay-index.md) (43) · [`interviews/predictive-history-interview-index.md`](interviews/predictive-history-interview-index.md) (16)
+- **SSOT:** [`data/cards.jsonl`](data/cards.jsonl) — all 209 cards; legacy `part` and paths unchanged
 
 One chapter consists of a lecture transcript (or essay/interview body), a companion commentary where applicable, and public orientation/navigation metadata.
 
@@ -21,12 +21,12 @@ One chapter consists of a lecture transcript (or essay/interview body), a compan
 Medium-first namespaces at the repository root (canonical corpora; [`book/`](../book/) is a deprecated compat tombstone only):
 
 - [`essays/`](essays/README.md) — Substack and long-form essays (`essay-2025-08-06-vision-mission-goals` … `essay-2026-06-19-peace-in-our-time`)
-- [`lectures/`](lectures/README.md) — canonical lecture packets under `lectures/<series>/` (147)
+- [`lectures/`](lectures/README.md) — canonical lecture packets under `lectures/<series>/` (150)
 - [`interviews/`](interviews/README.md) — 16 public interview provenance packets (`interview-YYYY-MM-DD-{host-slug}`); full catalog in the interview slice index
 
 ## First Chat Flow
 
-1. Identify the repo as the Predictive History **namespace catalog hub** (206 chapters).
+1. Identify the repo as the Predictive History **namespace catalog hub** (209 chapters).
 2. Load `data/llm-experience.json` for the unfolding map.
 3. Use `llms-full.txt` when the chat needs a full one-shot context packet after the compact map.
 4. Use `data/routes/seed.json` for the first 10-route spine seed.
@@ -47,7 +47,7 @@ Your first response should:
 
 1. Say that you are using `START-HERE.md`, `llms.txt`, and `llms-full.txt`.
 2. Name the default mode as `first_tour`.
-3. State the **namespace catalog hub** (206 chapters + slice indexes); note two-volume ph-civ/ph-apo is deprecated for onboarding.
+3. State the **namespace catalog hub** (209 chapters + slice indexes); note two-volume ph-civ/ph-apo is deprecated for onboarding.
 4. Open the 10-route seed by naming the first move: Homer-to-Tolstoy begins with `civ-07`.
 5. Offer the reader a compact choice: continue the first tour, study one route, open a chapter folder, or switch modes.
 
@@ -56,7 +56,7 @@ Template:
 ```text
 I am starting from START-HERE.md, llms.txt, and llms-full.txt. Default mode: first_tour.
 
-Predictive History is organized as a namespace catalog hub (206 public chapters) with lecture, essay, and interview slice indexes; legacy two-volume ph-civ/ph-apo framing is deprecated.
+Predictive History is organized as a namespace catalog hub (209 public chapters) with lecture, essay, and interview slice indexes; legacy two-volume ph-civ/ph-apo framing is deprecated.
 
 I will begin with the 10-route literary spine seed. The opening path is Homer-to-Tolstoy, starting at civ-07, with the guardrail that this is the literary spine route, not a side corridor.
 

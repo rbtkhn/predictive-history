@@ -2,6 +2,6 @@
 
 Series partition under [`lectures/`](../README.md) for **`civilization`** lecture chapters (`civ-*`).
 
-Most packets still live under [`book/`](../../book/). Volume I civilization spine (`civ-*`). Legacy book paths redirect here.
+Canonical Civilization packets live here under `lectures/civilization/` (`civ-*`). Legacy `book/` paths are retained only as compatibility tombstones.
 
 Catalog: [`docs/predictive-history-index.md`](../../docs/predictive-history-index.md).

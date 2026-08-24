@@ -149,8 +149,8 @@ HTML pages are generated from bundles; markdown sources stay authoritative.
 ```bash
 python scripts/build_study_edition.py --chapter civ-07
 python scripts/build_study_edition.py --route homer-to-tolstoy
-ph-civ study civ-07          # opens local preview path
-ph-civ study --build         # full pilot route
+predictive-history study civ-07          # proposed: opens local preview path
+predictive-history study --build         # proposed: full pilot route
 ```
 
 **CI (planned):** GitHub Actions on `main` → build → deploy `site/dist` to GitHub Pages.
@@ -159,7 +159,7 @@ ph-civ study --build         # full pilot route
 
 ## Static-site stack comparison (GitHub Pages fit)
 
-Requirements specific to ph-civ:
+Requirements specific to Predictive History:
 
 - **Python-first repo** — validators, pin-cite prep, and CLI already in Python; no Node toolchain today.
 - **Custom three-pane UX** — outline | verbatim floor | bidirectional footnotes; not standard docs-sidebar markdown.
@@ -266,9 +266,9 @@ Do not claim `launch_ready` until:
 - [x] `scripts/validate_study_edition.py` — link integrity
 - [x] `civ-07` static prototype (Phase 0 custom HTML) — `site/dist/study/civ-07/index.html`
 - [ ] Eleventy layout + GitHub Actions deploy (Phase 1)
-- [ ] `ph-civ study` CLI command
+- [ ] `predictive-history study` CLI command
 - [ ] `README.md` + `public-repo-contract.md` one-line study-edition pointer
-- [ ] `ph-civ link` emits study URL
+- [ ] `predictive-history link` emits study URL
 
 ---
 

@@ -1,4 +1,4 @@
-"""Public surface inventory — machine catalog of ph-civ reader and maintainer surfaces."""
+"""Public surface inventory — machine catalog of Predictive History surfaces."""
 
 from __future__ import annotations
 
@@ -115,7 +115,7 @@ def static_surface_rows() -> list[dict]:
             reader_mode="first_tour",
             generated_or_hand_authored="hand",
             validation_coverage="llm_bootloader",
-            regeneration_command="ph-civ validate",
+            regeneration_command="predictive-history validate",
         ),
         _row(
             surface="predictive_history_index",
@@ -123,7 +123,7 @@ def static_surface_rows() -> list[dict]:
             surface_class="chapter_catalog",
             status="generated",
             generated_or_hand_authored="generated",
-            regeneration_command="ph-civ index",
+            regeneration_command="predictive-history index",
             validation_coverage="predictive_history_index",
             notes="Human mirror: docs/predictive-history-index.md",
         ),
@@ -238,7 +238,7 @@ def static_surface_rows() -> list[dict]:
             surface_class="schema_prompt",
             status="generated",
             generated_or_hand_authored="generated",
-            regeneration_command="ph-civ surface-inventory",
+            regeneration_command="predictive-history surface-inventory",
             validation_coverage="manual",
         ),
         _row(
@@ -247,7 +247,7 @@ def static_surface_rows() -> list[dict]:
             surface_class="schema_prompt",
             status="generated",
             generated_or_hand_authored="generated",
-            regeneration_command="ph-civ surface-triage",
+            regeneration_command="predictive-history surface-triage",
             validation_coverage="manual",
         ),
     ]
@@ -343,7 +343,7 @@ def render_inventory_markdown(payload: dict) -> str:
         f"- **Surfaces:** {payload['surface_count']}",
         f"- **Generated:** {payload['generated_at']}",
         f"- **Machine SSOT:** [`{INVENTORY_JSON_REL}`](../../{INVENTORY_JSON_REL})",
-        f"- **Regenerate:** `ph-civ surface-inventory`",
+        f"- **Regenerate:** `predictive-history surface-inventory`",
         "",
         "Per-surface status vocabulary: [public-surface-status.md](../../docs/catalogs/public-surface-status.md).",
         "",
@@ -422,7 +422,7 @@ def validate_public_surface_inventory(
     )
     if stored.get("fingerprint") != current_fp:
         errors.append(
-            f"stale inventory: {INVENTORY_JSON_REL} (run `ph-civ surface-inventory` to refresh)"
+            f"stale inventory: {INVENTORY_JSON_REL} (run `predictive-history surface-inventory` to refresh)"
         )
     if not md_path.exists():
         errors.append(f"missing inventory summary: {INVENTORY_MD_REL}")

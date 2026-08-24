@@ -55,6 +55,9 @@ from .volume_i_parts import validate_volume_i_parts
 from .reader_namespace_guard import validate_reader_namespace
 
 EXPECTED_SOURCE_REPO = "rbtkhn/ph-workshop"
+ALLOWED_CARD_SOURCE_REPOS = frozenset(
+    {EXPECTED_SOURCE_REPO, "operator-supplied-youtube-transcript"}
+)
 GITHUB_TREE_BASE = "https://github.com/rbtkhn/predictive-history/tree/main"
 GITHUB_BLOB_BASE = "https://github.com/rbtkhn/predictive-history/blob/main"
 
@@ -735,7 +738,7 @@ def cmd_validate(args) -> int:
         if card.get("placement_weight") not in {"strong", "medium", "light"}:
             errors.append(f"{source_id} invalid placement_weight: {card.get('placement_weight')}")
         source_repo = card.get("source_snapshot", {}).get("repo")
-        if source_repo != EXPECTED_SOURCE_REPO:
+        if source_repo not in ALLOWED_CARD_SOURCE_REPOS:
             errors.append(f"{source_id} invalid source repo: {source_repo}")
         source_paths = card.get("source_paths", {})
         transcript_path = source_paths.get("source_chapter_path")
@@ -1385,7 +1388,7 @@ def cmd_status(args) -> int:
                 "surface_triage_stale": tri_stale,
             }
         )
-    print("predictive-history: namespace catalog hub (206 public chapters)")
+    print(f"predictive-history: namespace catalog hub ({len(load_cards())} public chapters)")
     print(f"primary_artifact: {architecture['primary_artifact']}")
     hub = architecture.get("catalog_hub", {})
     if hub:
@@ -1482,7 +1485,7 @@ def cmd_growth(args) -> int:
     growth_goals = load_growth_goals()
     if args.json:
         return emit_json(growth_goals)
-    print("ph-civ public growth")
+    print("Predictive History public growth")
     print(growth_goals["principle"])
     print("")
     print("Agent goal rule:")
@@ -1546,7 +1549,7 @@ def cmd_start(args) -> int:
     experience = load_llm_experience()
     if args.json:
         return emit_json(experience)
-    print("predictive-history: LLM-native namespace catalog bootloader (ph-civ CLI compat)")
+    print("predictive-history: LLM-native namespace catalog bootloader")
     print(f"github_url: {experience['github_url']}")
     print(f"start_here: {experience['start_here']}")
     if experience.get("full_context"):
@@ -1741,7 +1744,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--json", action="store_true")
     p.set_defaults(func=cmd_tour)
 
-    p = sub.add_parser("volumes", help="Show the two-volume ph-civ architecture.")
+    p = sub.add_parser("volumes", help="Show the deprecated two-volume architecture metadata.")
     p.add_argument("--json", action="store_true")
     p.set_defaults(func=cmd_volumes)
 

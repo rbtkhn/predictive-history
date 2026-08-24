@@ -78,7 +78,7 @@ See [archive/parts-v1-hybrid.md](archive/parts-v1-hybrid.md).
 | **L6** | Open issues | Review-oriented follow-ups |
 | **Canvas** | Project leverage | Patterns, volume role, bounded application |
 
-Template: [`lectures/civilization/civ-XX/civ-XX-commentary.md`](../lectures/civilization/civ-XX/civ-XX-commentary.md) (body); v2 frontmatter uses `scaffold_version: ph_civ_commentary_canvas_v2`.
+Template: `lectures/civilization/civ-XX/civ-XX-commentary.md` (body); v2 frontmatter uses `scaffold_version: ph_civ_commentary_canvas_v2`.
 
 ---
 
@@ -188,7 +188,7 @@ Script: [`scripts/extract_part_section_to_chapter.py`](../scripts/extract_part_s
 - [ ] `commentary_maturity` updated  
 - [ ] Card **Limits of the Frame** aligned if L3/L4 tightened limits  
 - [ ] Chapter README uses 3-step lattice (no Part apparatus)  
-- [ ] `ph-civ validate` passes  
+- [ ] `predictive-history validate` passes
 
 ### Tiered rebuild strategy
 
@@ -253,7 +253,7 @@ When `data/patterns.json` IDs are mandatory in L5 vs canvas-only.
 
 ### Calibration anchor: civ-07
 
-Use [`lectures/civilization/civ-07/civ-07-commentary.md`](../lectures/civilization/civ-07/civ-07-commentary.md) as the reference v2 upgrade before scaling waves.
+Use [`lectures/civilization/civ-07/civ-07-commentary.md`](../../lectures/civilization/civ-07/civ-07-commentary.md) as the reference v2 upgrade before scaling waves.
 
 **Proof-object gate for `l2_pinned`:** L0 thesis + ≥2 L2 claims must reflect governing inversion + two concrete historical examples bearing argumentative weight.
 

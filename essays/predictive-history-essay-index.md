@@ -7,7 +7,7 @@ Catalog of Substack essay bodies under `essays/` (flat files).
 - **SSOT:** [`data/cards.jsonl`](../data/cards.jsonl) · [`data/essays/manifest.json`](../data/essays/manifest.json)
 - **Machine catalog:** [`predictive-history-essay-index.json`](predictive-history-essay-index.json)
 - **Full hub:** [`docs/predictive-history-index.md`](../docs/predictive-history-index.md)
-- **Regenerate:** `ph-civ index` · `python scripts/generate_ph_civ_index.py`
+- **Regenerate:** `predictive-history index` · `python scripts/generate_ph_civ_index.py`
 
 ## Essays by publication date
 

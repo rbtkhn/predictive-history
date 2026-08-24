@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "card_count": 206,
+  "card_count": 209,
   "bucket_counts": {
     "PUBLIC_READY": 0,
     "OPEN_CANVAS": 1,
@@ -9,7 +9,7 @@
     "NEEDS_ROUTE_REVIEW": 0,
     "NEEDS_SOURCE_FLOOR": 0,
     "NEEDS_CARD_LIMITS": 0,
-    "NEEDS_COMMENTARY_REVIEW": 200,
+    "NEEDS_COMMENTARY_REVIEW": 203,
     "STUB_ROUTED": 0,
     "UNASSIGNED": 4
   },
@@ -135,6 +135,9 @@
       "gb-08",
       "gb-09",
       "gb-10",
+      "gb-11",
+      "gb-12",
+      "gb-13",
       "geo-01",
       "geo-02",
       "geo-03",
@@ -1028,6 +1031,27 @@
       "series": "great-books"
     },
     {
+      "source_id": "gb-11",
+      "bucket": "NEEDS_COMMENTARY_REVIEW",
+      "review_status": "in_review",
+      "part": "civilization",
+      "series": "great-books"
+    },
+    {
+      "source_id": "gb-12",
+      "bucket": "NEEDS_COMMENTARY_REVIEW",
+      "review_status": "in_review",
+      "part": "civilization",
+      "series": "great-books"
+    },
+    {
+      "source_id": "gb-13",
+      "bucket": "NEEDS_COMMENTARY_REVIEW",
+      "review_status": "in_review",
+      "part": "civilization",
+      "series": "great-books"
+    },
+    {
       "source_id": "geo-01",
       "bucket": "NEEDS_COMMENTARY_REVIEW",
       "review_status": "in_review",
@@ -1679,8 +1703,8 @@
       "series": "secret-history"
     }
   ],
-  "fingerprint": "d18b370174c8c5e0",
-  "generated_at": "2026-06-27T15:53:38Z",
+  "fingerprint": "c33a5db5330ecbf7",
+  "generated_at": "2026-08-24T20:13:35Z",
   "markdown_summary": "runtime/artifacts/public-surface-triage.md",
   "inventory_json": "data/public-surface-inventory.json"
 }

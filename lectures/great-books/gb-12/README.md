@@ -25,6 +25,12 @@ Use this folder when someone shares the GitHub chapter link in a YouTube comment
 
 `in_review`. Promoted from YouTube ASR 2026-06-09. Paradise lecture (part 2 of 2); completes Purgatory handoff from `gb-11`.
 
+## LLM Prompt
+
+Paste this folder link into ChatGPT, Claude, or Grok and ask:
+
+> Guide me through this chapter folder as a public study packet. Start with the transcript, then use the Commentary canvas and card guardrails. Keep the lecture's theological and civilizational claims bounded.
+
 ## Guardrails
 
 This folder represents public lecture material and companion study apparatus. It is not an endorsement layer and not a substitute for source review.

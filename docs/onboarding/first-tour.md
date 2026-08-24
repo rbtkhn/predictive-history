@@ -1,6 +1,6 @@
 # First Tour
 
-> **Deprecated framing note:** Two-volume ph-civ/ph-apo onboarding is deprecated. This tour’s **route content is unchanged**; see [`archive/two-volume-ph-civ-apo-deprecated.md`](archive/two-volume-ph-civ-apo-deprecated.md). Primary catalog: [`predictive-history-index.md`](predictive-history-index.md).
+> **Deprecated framing note:** Two-volume ph-civ/ph-apo onboarding is deprecated. This tour’s **route content is unchanged**; see [`two-volume-ph-civ-apo-deprecated.md`](../archive/two-volume-ph-civ-apo-deprecated.md). Primary catalog: [`predictive-history-index.md`](../predictive-history-index.md).
 
 Use this when a reader chooses `continue the first tour` after pasting `https://github.com/rbtkhn/predictive-history` into an LLM chat.
 
@@ -84,4 +84,4 @@ D. Switch modes.
 - `sh-16` is a Tolstoy endpoint via an Anna Karenina coda, not a dedicated Tolstoy lecture.
 - Application routes are public orientation only, not live operational analysis.
 - Commentaries are open project canvases, not final scholarly review.
-- Chapter folders are the study surface; namespace catalog hub.
+- Chapter folders are the study surface; the namespace catalog is the hub.

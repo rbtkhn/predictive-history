@@ -543,7 +543,7 @@ def render_index_body(cards: list[dict], repo_root: Path) -> str:
             f"- **SSOT:** [`data/cards.jsonl`](../data/cards.jsonl) · "
             f"[`predictive-history-index.json`](predictive-history-index.json)"
         ),
-        "- **Regenerate:** `ph-civ index` · `python scripts/generate_ph_civ_index.py` · auto-sync during `ph-civ validate` and publish",
+        "- **Regenerate:** `predictive-history index` · `python scripts/generate_ph_civ_index.py` · auto-sync during `predictive-history validate` and publish",
         "",
         "YouTube and Substack source URLs appear in catalog tables and in "
         "[`predictive-history-index.json`](predictive-history-index.json) (`source_video_url`). "
@@ -620,7 +620,7 @@ def render_lectures_index_body(cards: list[dict], repo_root: Path) -> list[str]:
         f"- **SSOT:** [`data/cards.jsonl`](../data/cards.jsonl) · "
         f"[`predictive-history-lecture-index.json`](predictive-history-lecture-index.json)",
         f"- **Full hub:** [`docs/predictive-history-index.md`](../docs/predictive-history-index.md)",
-        "- **Regenerate:** `ph-civ index` · `python scripts/generate_ph_civ_index.py`",
+        "- **Regenerate:** `predictive-history index` · `python scripts/generate_ph_civ_index.py`",
         "",
     ]
     for series_key, series_label in LECTURE_SECTIONS:
@@ -652,7 +652,7 @@ def render_essays_index_body(cards: list[dict], repo_root: Path) -> list[str]:
         f"[`data/essays/manifest.json`](../data/essays/manifest.json)",
         f"- **Machine catalog:** [`predictive-history-essay-index.json`](predictive-history-essay-index.json)",
         f"- **Full hub:** [`docs/predictive-history-index.md`](../docs/predictive-history-index.md)",
-        "- **Regenerate:** `ph-civ index` · `python scripts/generate_ph_civ_index.py`",
+        "- **Regenerate:** `predictive-history index` · `python scripts/generate_ph_civ_index.py`",
         "",
         "## Essays by publication date",
         "",
@@ -674,7 +674,7 @@ def render_interviews_index_body(cards: list[dict], repo_root: Path) -> list[str
         f"[`data/interviews/manifest.json`](../data/interviews/manifest.json)",
         f"- **Machine catalog:** [`predictive-history-interview-index.json`](predictive-history-interview-index.json)",
         f"- **Full hub:** [`docs/predictive-history-index.md`](../docs/predictive-history-index.md)",
-        "- **Regenerate:** `ph-civ index` · `python scripts/generate_ph_civ_index.py`",
+        "- **Regenerate:** `predictive-history index` · `python scripts/generate_ph_civ_index.py`",
         "",
         INTERVIEWS_SLICE_INTRO,
         "",
@@ -872,7 +872,7 @@ def validate_ph_civ_index(cards: list[dict] | None = None, *, repo_root: Path | 
         errors.append(f"missing chapter index: {INDEX_MD_REL}")
     elif read_index_fingerprint(md_path) != expected_fp:
         errors.append(
-            f"stale chapter index: {INDEX_MD_REL} (run `ph-civ index` or `ph-civ validate` to refresh)"
+            f"stale chapter index: {INDEX_MD_REL} (run `predictive-history index` or `predictive-history validate` to refresh)"
         )
 
     if not json_path.exists():
@@ -881,7 +881,7 @@ def validate_ph_civ_index(cards: list[dict] | None = None, *, repo_root: Path | 
         json_fp = read_index_fingerprint(json_path)
         if json_fp != expected_fp:
             errors.append(
-                f"stale chapter index: {INDEX_JSON_REL} (run `ph-civ index` or `ph-civ validate` to refresh)"
+                f"stale chapter index: {INDEX_JSON_REL} (run `predictive-history index` or `predictive-history validate` to refresh)"
             )
         payload = json.loads(json_path.read_text(encoding="utf-8"))
         if payload.get("card_count") != len(cards):
@@ -914,7 +914,7 @@ def validate_namespace_index(
         errors.append(f"missing namespace index: {config.md_rel}")
     elif read_index_fingerprint(md_path, marker=config.fingerprint_marker) != expected_fp:
         errors.append(
-            f"stale namespace index: {config.md_rel} (run `ph-civ index` or `ph-civ validate` to refresh)"
+            f"stale namespace index: {config.md_rel} (run `predictive-history index` or `predictive-history validate` to refresh)"
         )
 
     if not json_path.exists():
@@ -923,7 +923,7 @@ def validate_namespace_index(
         json_fp = read_index_fingerprint(json_path)
         if json_fp != expected_fp:
             errors.append(
-                f"stale namespace index: {config.json_rel} (run `ph-civ index` or `ph-civ validate` to refresh)"
+                f"stale namespace index: {config.json_rel} (run `predictive-history index` or `predictive-history validate` to refresh)"
             )
         payload = json.loads(json_path.read_text(encoding="utf-8"))
         if payload.get("card_count") != expected_count:

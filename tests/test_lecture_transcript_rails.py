@@ -28,8 +28,8 @@ def _audit_counts() -> dict[str, int]:
 
 def test_lecture_rails_strict_title_case():
     counts = _audit_counts()
-    assert counts.get("title_case") == 149
-    assert sum(counts.values()) == 149
+    assert counts.get("title_case") == 150
+    assert sum(counts.values()) == 150
 
 
 def test_lecture_audit_strict_exit_zero():

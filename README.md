@@ -6,17 +6,17 @@ For AI agents and new chats: start with `START-HERE.md`, then `AGENTS.md` and `l
 
 ## Primary reader model: namespace catalog hub
 
-**Primary artifact:** `namespace_catalog` — full hub at [`docs/predictive-history-index.md`](docs/predictive-history-index.md) and [`docs/predictive-history-index.json`](docs/predictive-history-index.json) (**206** public chapters).
+**Primary artifact:** `namespace_catalog` — full hub at [`docs/predictive-history-index.md`](docs/predictive-history-index.md) and [`docs/predictive-history-index.json`](docs/predictive-history-index.json) (**209** public chapters).
 
 | Slice | Index | Count |
 | --- | --- | ---: |
-| Lectures | [`lectures/predictive-history-lecture-index.md`](lectures/predictive-history-lecture-index.md) | 147 |
+| Lectures | [`lectures/predictive-history-lecture-index.md`](lectures/predictive-history-lecture-index.md) | 150 |
 | Essays | [`essays/predictive-history-essay-index.md`](essays/predictive-history-essay-index.md) | 43 |
 | Interviews | [`interviews/predictive-history-interview-index.md`](interviews/predictive-history-interview-index.md) | 16 |
 
-SSOT: [`data/cards.jsonl`](data/cards.jsonl). Regenerate indexes: `ph-civ index`.
+SSOT: [`data/cards.jsonl`](data/cards.jsonl). Regenerate indexes: `predictive-history index`.
 
-**Deprecated (compat only):** two-volume **ph-civ / ph-apo** reader frame — see [`docs/archive/two-volume-ph-civ-apo-deprecated.md`](docs/archive/two-volume-ph-civ-apo-deprecated.md). Card `part`, route `surface`, and the `ph-civ` CLI name are unchanged.
+**Deprecated (metadata only):** two-volume **ph-civ / ph-apo** reader frame — see [`docs/archive/two-volume-ph-civ-apo-deprecated.md`](docs/archive/two-volume-ph-civ-apo-deprecated.md). Card `part` and route `surface` remain for historical routing; the supported CLI is `predictive-history`.
 
 **Root layout:** [`docs/onboarding/root-directory-map.md`](docs/onboarding/root-directory-map.md)
 
@@ -34,22 +34,22 @@ It should not become the large-media vault. Large media archives stay outside Gi
 
 ## Root Chapter Corpora
 
-Medium-first chapter namespaces at the repository root (siblings to deprecated [`book/`](book/) tombstone, [`ph-civ/`](ph-civ/README.md), [`ph-apo/`](ph-apo/README.md)):
+Medium-first chapter namespaces at the repository root (with deprecated `book/`, `ph-civ/`, and `ph-apo/` tombstones retained only for migration orientation):
 
 - [`essays/`](essays/README.md) — flat Substack essay bodies (`essay-YYYY-MM-DD-{slug}.md`)
 - [`commentaries/`](commentaries/README.md) — essay commentary canvases (`essay-*-commentary.md`; lectures/interviews unchanged)
-- [`lectures/`](lectures/README.md) — canonical lecture chapter packets under `lectures/<series>/` (147)
+- [`lectures/`](lectures/README.md) — canonical lecture chapter packets under `lectures/<series>/` (150)
 - [`interviews/`](interviews/README.md) — 16 public interview provenance packets (`interview-YYYY-MM-DD-{host-slug}`); catalog in the interview slice index
 
 ## What Is Included
 
-- 206 public cards in `data/cards.jsonl` — lecture chapters across Volume I (`ph-civ`) and Volume II (`ph-apo`), 43 Substack essays (`essay-2025-08-06-vision-mission-goals` … `essay-2026-06-19-peace-in-our-time`), and 16 provenance interviews.
-- 206 public source chapters under canonical root namespaces (`lectures/`, `essays/`, `interviews/`).
-- 206 chapter commentaries attached to those canonical homes, each seeded as an open commentary canvas.
+- 209 public cards in `data/cards.jsonl` — 150 lectures, 43 Substack essays (`essay-2025-08-06-vision-mission-goals` … `essay-2026-06-19-peace-in-our-time`), and 16 provenance interviews.
+- 209 public source chapters under canonical root namespaces (`lectures/`, `essays/`, `interviews/`).
+- 209 chapter commentaries attached to those canonical homes, each seeded as an open commentary canvas.
 - Chapter-folder `README.md` doorways for folder-backed chapters, designed for direct GitHub links in YouTube comments and LLM chats.
 - Full lecture transcripts under `lectures/` so the repo can function independently of outside workshop storage.
 - Chapter catalog and source URLs: [`docs/predictive-history-index.md`](docs/predictive-history-index.md) and [`docs/predictive-history-index.json`](docs/predictive-history-index.json) (`source_video_url` per chapter).
-- A full chapter catalog at `docs/predictive-history-index.md` (human) and `docs/predictive-history-index.json` (machine) listing all 206 public chapters (lectures, essays, and provenance interviews) with transcript, commentary, folder, and source URLs (regenerate: `ph-civ index`; auto-sync during `ph-civ validate` and publish).
+- A full chapter catalog at `docs/predictive-history-index.md` (human) and `docs/predictive-history-index.json` (machine) listing all 209 public chapters (lectures, essays, and provenance interviews) with transcript, commentary, folder, and source URLs (regenerate: `predictive-history index`; auto-sync during `predictive-history validate` and publish).
 - Two conceptual volumes (deprecated reader frame): Volume I / `ph-civ` and Volume II / `ph-apo` — see [`docs/archive/two-volume-ph-civ-apo-deprecated.md`](docs/archive/two-volume-ph-civ-apo-deprecated.md).
 - Historical two-volume reader map archived under [`docs/archive/`](docs/archive/two-volume-reader-order.md); see [From The Old Seven Volumes To The Current Two](docs/archive/seven-volume-to-two-volume.md).
 - Series coverage: Civilization, Great Books, Geo-Strategy, Game Theory, Secret History, and Essays.
@@ -79,43 +79,30 @@ python -m pip install -e .
 ## CLI
 
 ```bash
-ph-civ list
-ph-civ list --part civilization
-ph-civ list --series game-theory --json
-ph-civ show civ-41 --format json
-ph-civ search Dante
-ph-civ prompt gb-01 --mode creative
-ph-civ spark gt-16 --count 5
-ph-civ spine
-ph-civ path homer-to-tolstoy
-ph-civ validate
-ph-civ index
-ph-civ index --check
-ph-civ status
-ph-civ start
-ph-civ start --json
-ph-civ tour
-ph-civ tour --json
-ph-civ trilingual
-ph-civ trilingual --json
-ph-civ bilingual
-ph-civ bilingual --json
-ph-civ growth
-ph-civ volumes
-ph-civ volume volume-i --json
-ph-civ route civ-07 --json
-ph-civ link gt-24
-ph-civ link gt-24 --json
-ph-civ patterns
-ph-civ pattern civ-chokepoint-pressure --format json
-ph-civ bridge gt-16 --json
-ph-civ bridge civ-07 --format markdown
-ph-apo list
-ph-apo status
-ph-apo route gt-16 --json
+predictive-history list
+predictive-history list --series game-theory --json
+predictive-history show civ-41 --format json
+predictive-history search Dante
+predictive-history prompt gb-01 --mode creative
+predictive-history spark gt-16 --count 5
+predictive-history spine
+predictive-history path homer-to-tolstoy
+predictive-history validate
+predictive-history index
+predictive-history index --check
+predictive-history status
+predictive-history start --json
+predictive-history tour --json
+predictive-history trilingual --json
+predictive-history growth
+predictive-history route civ-07 --json
+predictive-history link gt-24 --json
+predictive-history patterns
+predictive-history pattern civ-chokepoint-pressure --format json
+predictive-history bridge civ-07 --format markdown
 ```
 
-All prompt and spark commands are template-only. They do not call an AI provider. Pattern commands expose public civilizational frames for downstream strategy analysis; they do not import live strategy workspace material. Use **`ph-civ`** as the public CLI (`python -m civ_ph.cli â€¦` invokes the same code when running from source).
+All prompt and spark commands are template-only. They do not call an AI provider. Pattern commands expose public civilizational frames for downstream strategy analysis; they do not import live strategy workspace material. Use **`predictive-history`** as the public CLI (`python -m civ_ph.cli …` invokes the same code when running from source).
 
 ## Commentary Canvas
 
@@ -134,7 +121,7 @@ This wedge is defined, not automatically launch-ready. The unresolved tension is
 The canonical growth guardrail lives in `data/growth-goals.json` and is exposed with:
 
 ```bash
-ph-civ growth --json
+predictive-history growth --json
 ```
 
 For a compact doorway into Jiang-facing interpretive notes on teaching, spread, rhetoric, platform fit, and cross-volume continuity, see [Jiang Analysis Index](docs/methodology/jiang-analysis-index.md).
@@ -157,9 +144,9 @@ If the question is not only "what is the route?" but "why did the old seven beco
 
 Volume I now also has a secondary theological-philosophical route: [Plato to Hegel](data/corridors/plato-to-hegel.md). It is parallel to the literary spine rather than a replacement for it, and it gives readers a second stable entrance into Civilization through Plato, Genesis, Augustine, Dante, Kant, and Hegel.
 
-## Apocalypse Pressure Spine
+## Application Pressure Spine
 
-`ph-apo` now has a parallel organizing route to Volume I's literary spine, but it is a pressure spine rather than an author spine. Use [ph-apo Pressure Spine](data/corridors/ph-apo-pressure-spine.md) as the compact public application entry.
+The archived two-volume architecture includes a pressure spine rather than an author spine. Use [ph-apo Pressure Spine](data/corridors/ph-apo-pressure-spine.md) as a legacy-named compact application route; it does not restore `ph-apo` as a reader root.
 
 Retired museum layer orientation: `docs/archive/ph-mus-retired.md`.
 

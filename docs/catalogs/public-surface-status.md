@@ -6,8 +6,8 @@ Canonical public artifact: [`rbtkhn/predictive-history`](https://github.com/rbtk
 
 **Machine rollups:**
 
-- Surface inventory: [`data/public-surface-inventory.json`](../data/public-surface-inventory.json) · `ph-civ surface-inventory`
-- Per-chapter triage: [`data/public-surface-triage.json`](../data/public-surface-triage.json) · `ph-civ surface-triage`
+- Surface inventory: [`data/public-surface-inventory.json`](../../data/public-surface-inventory.json) · `predictive-history surface-inventory`
+- Per-chapter triage: [`data/public-surface-triage.json`](../../data/public-surface-triage.json) · `predictive-history surface-triage`
 - Human summaries: [`runtime/artifacts/`](../runtime/artifacts/)
 
 **Related doctrine:**
@@ -51,15 +51,15 @@ Canonical public artifact: [`rbtkhn/predictive-history`](https://github.com/rbtk
 | `REVIEW_WITH_CURATOR` | `in_review` with placeholder-heavy commentary |
 | `UNASSIGNED` | No higher-priority bucket matched |
 
-`ph-civ commentary-status` remains the **rebuild wave queue**; `ph-civ surface-triage` is **curator readiness**.
+`predictive-history commentary-status` remains the **rebuild wave queue**; `predictive-history surface-triage` is **curator readiness**.
 
 ## CLI
 
 ```bash
-ph-civ surface-inventory
-ph-civ surface-inventory --check
-ph-civ surface-triage
-ph-civ surface-triage --verbose
-ph-civ status
-ph-civ validate --surfaces --check
+predictive-history surface-inventory
+predictive-history surface-inventory --check
+predictive-history surface-triage
+predictive-history surface-triage --verbose
+predictive-history status
+predictive-history validate --surfaces --check
 ```

@@ -8,14 +8,14 @@ Translate reach ambitions into verifiable public machinery without confusing goa
 
 - New entry in `data/growth-goals.json`
 - Operator asks for distribution / views / campaign work
-- `ph-civ growth` review
+- `predictive-history growth` review
 
 ## Inputs
 
 - `data/growth-goals.json`
 - [public-repo-contract.md](../public-repo-contract.md)
 - [public-surface-status.md](../public-surface-status.md)
-- Triage rollup: `ph-civ surface-triage`
+- Triage rollup: `predictive-history surface-triage`
 
 ## Steps
 
@@ -28,9 +28,9 @@ Translate reach ambitions into verifiable public machinery without confusing goa
 ## Validation
 
 ```bash
-ph-civ growth --json
-ph-civ status
-ph-civ surface-triage
+predictive-history growth --json
+predictive-history status
+predictive-history surface-triage
 ```
 
 ## Stop conditions

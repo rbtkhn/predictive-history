@@ -1,12 +1,12 @@
-<!-- predictive-history-lecture-index-fingerprint: 875e6c03d3a35ad3 -->
+<!-- predictive-history-lecture-index-fingerprint: f07277f30c8ed305 -->
 # Predictive History Lectures Index
 
 Catalog of lecture chapter packets under `lectures/` (video-sourced transcripts).
 
-- **Card count:** 147
+- **Card count:** 150
 - **SSOT:** [`data/cards.jsonl`](../data/cards.jsonl) · [`predictive-history-lecture-index.json`](predictive-history-lecture-index.json)
 - **Full hub:** [`docs/predictive-history-index.md`](../docs/predictive-history-index.md)
-- **Regenerate:** `ph-civ index` · `python scripts/generate_ph_civ_index.py`
+- **Regenerate:** `predictive-history index` · `python scripts/generate_ph_civ_index.py`
 
 ## Civilization
 
@@ -77,7 +77,7 @@ Catalog of lecture chapter packets under `lectures/` (video-sourced transcripts)
 
 ## Great Books
 
-**Series:** `great-books` · **Chapters:** 10
+**Series:** `great-books` · **Chapters:** 13
 
 | Source ID | Title | Review | Words | Transcript | Commentary | Folder | Video |
 | --- | --- | --- | ---: | --- | --- | --- | --- |
@@ -91,6 +91,9 @@ Catalog of lecture chapter packets under `lectures/` (video-sourced transcripts)
 | `gb-08` | Great Books #8: The Poetry of Empire | `in_review` | 7,214 | [transcript](lectures/great-books/gb-08/gb-08-transcript.md) | [commentary](lectures/great-books/gb-08/gb-08-commentary.md) | [folder](lectures/great-books/gb-08/README.md) | [video](https://www.youtube.com/watch?v=YXTRlvFIRt8) |
 | `gb-09` | Great Books #9: Dante (Re-Upload with Audio Fixed) | `in_review` | 2,089 | [transcript](lectures/great-books/gb-09/gb-09-transcript.md) | [commentary](lectures/great-books/gb-09/gb-09-commentary.md) | [folder](lectures/great-books/gb-09/README.md) | [video](https://www.youtube.com/watch?v=4EZUrGPgAos) |
 | `gb-10` | Great Books #10: Dante's Hierarchy of Hell | `in_review` | 6,313 | [transcript](lectures/great-books/gb-10/gb-10-transcript.md) | [commentary](lectures/great-books/gb-10/gb-10-commentary.md) | [folder](lectures/great-books/gb-10/README.md) | [video](https://www.youtube.com/watch?v=wGpdMYa2bME) |
+| `gb-11` | Great Books #11: Dante's Revolution | `in_review` | 9,117 | [transcript](lectures/great-books/gb-11/gb-11-transcript.md) | [commentary](lectures/great-books/gb-11/gb-11-commentary.md) | [folder](lectures/great-books/gb-11/README.md) | [video](https://www.youtube.com/watch?v=otyUpKhpTYM) |
+| `gb-12` | Great Books #12: Dante in Paradise | `in_review` | 6,735 | [transcript](lectures/great-books/gb-12/gb-12-transcript.md) | [commentary](lectures/great-books/gb-12/gb-12-commentary.md) | [folder](lectures/great-books/gb-12/README.md) | [video](https://www.youtube.com/watch?v=FspDllFoiDE) |
+| `gb-13` | Great Books #13: Gay Talese's Sparks of Light | `in_review` | 6,220 | [transcript](lectures/great-books/gb-13/gb-13-transcript.md) | [commentary](lectures/great-books/gb-13/gb-13-commentary.md) | [folder](lectures/great-books/gb-13/README.md) | [video](https://www.youtube.com/watch?v=VWmPHHnZuiw) |
 
 ## Geo-Strategy
 

@@ -2,7 +2,7 @@
 
 **Publisher:** **Statecraft Intelligence Desk**
 
-Human-facing docs for [`rbtkhn/predictive-history`](https://github.com/rbtkhn/predictive-history). The **catalog hub** (206 chapters) stays at this directory root:
+Human-facing docs for [`rbtkhn/predictive-history`](https://github.com/rbtkhn/predictive-history). The **catalog hub** (209 chapters) stays at this directory root:
 
 - [`predictive-history-index.md`](predictive-history-index.md) · [`predictive-history-index.json`](predictive-history-index.json)
 

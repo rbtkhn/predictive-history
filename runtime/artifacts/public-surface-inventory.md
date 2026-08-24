@@ -1,10 +1,10 @@
-<!-- public-surface-inventory-fingerprint: 2710a27df4cf49a0 -->
+<!-- public-surface-inventory-fingerprint: fd673b9abd2a175e -->
 # Public surface inventory
 
 - **Surfaces:** 26
-- **Generated:** 2026-06-27T15:53:37Z
+- **Generated:** 2026-08-24T20:13:33Z
 - **Machine SSOT:** [`data/public-surface-inventory.json`](../../data/public-surface-inventory.json)
-- **Regenerate:** `ph-civ surface-inventory`
+- **Regenerate:** `predictive-history surface-inventory`
 
 Per-surface status vocabulary: [public-surface-status.md](../../docs/catalogs/public-surface-status.md).
 

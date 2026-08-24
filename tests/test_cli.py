@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_loads_all_seeded_cards():
     cards = load_cards()
-    assert len(cards) == 206
+    assert len(cards) == 209
     assert {"civilization", "world-war"} <= {card["part"] for card in cards}
 
 
@@ -35,8 +35,8 @@ def test_all_cards_have_local_transcript_and_commentary():
         transcript_paths.append(transcript_path)
         commentary_paths.append(commentary_path)
 
-    assert len(set(transcript_paths)) == 206
-    assert len(set(commentary_paths)) == 206
+    assert len(set(transcript_paths)) == 209
+    assert len(set(commentary_paths)) == 209
 
 
 def test_all_commentaries_have_open_project_canvas():
@@ -167,7 +167,7 @@ def test_prompt_creative_contains_boundaries(capsys):
 
 def test_validate_passes(capsys):
     assert main(["validate"]) == 0
-    assert "card_count: 206" in capsys.readouterr().out
+    assert "card_count: 209" in capsys.readouterr().out
 
 
 def test_index_command_writes_fingerprinted_index():
@@ -188,8 +188,8 @@ def test_index_command_writes_fingerprinted_index():
     assert read_index_fingerprint(md_path) == read_index_fingerprint(json_path)
     assert md_path.read_text(encoding="utf-8").startswith("<!-- predictive-history-index-fingerprint:")
     payload = json.loads(json_path.read_text(encoding="utf-8"))
-    assert payload["card_count"] == 206
-    assert len(payload["chapters"]) == 206
+    assert payload["card_count"] == 209
+    assert len(payload["chapters"]) == 209
     assert payload["schema_version"] == 5
     assert payload["primary_artifact"] == "namespace_catalog"
     assert payload["transcript_word_total"] > 1_000_000
@@ -203,7 +203,10 @@ def test_index_check_reports_current_after_validate():
 
 def test_exported_source_repo_uses_workshop():
     cards = load_cards()
-    assert {card["source_snapshot"]["repo"] for card in cards} == {"rbtkhn/ph-workshop"}
+    assert {card["source_snapshot"]["repo"] for card in cards} == {
+        "rbtkhn/ph-workshop",
+        "operator-supplied-youtube-transcript",
+    }
 
 
 def test_literary_spine_ends_with_tolstoy():
@@ -381,7 +384,7 @@ def test_ph_civ_index_hub_links_namespace_slices():
     assert "../essays/predictive-history-essay-index.md" in md
     assert "../interviews/predictive-history-interview-index.md" in md
     assert "| Lectures |" in md
-    assert "| 147 |" in md
+    assert "| 150 |" in md
     assert "| 43 |" in md
     assert "| 16 |" in md
     assert "## Deprecated reader frame" in md
@@ -413,7 +416,7 @@ def test_ph_civ_index_transcript_word_counts():
     chapters = payload["chapters"]
     assert payload["schema_version"] == 5
     assert payload["primary_artifact"] == "namespace_catalog"
-    assert len(chapters) == 206
+    assert len(chapters) == 209
     assert all("transcript_word_count" in chapter for chapter in chapters)
     assert payload["transcript_word_total"] == sum(
         chapter["transcript_word_count"] for chapter in chapters
@@ -429,8 +432,8 @@ def test_lectures_index_exists_and_matches_cards():
     )
     assert payload["scope"] == "lectures"
     assert payload["hub_index"] == "docs/predictive-history-index.md"
-    assert payload["card_count"] == 147
-    assert len(payload["chapters"]) == 147
+    assert payload["card_count"] == 150
+    assert len(payload["chapters"]) == 150
     md = (ROOT / "lectures" / "predictive-history-lecture-index.md").read_text(encoding="utf-8")
     assert md.startswith("<!-- predictive-history-lecture-index-fingerprint:")
     assert "civilization/civ-01/" in md
@@ -637,7 +640,7 @@ def test_volumes_command_returns_architecture(capsys):
     assert payload["volumes"]["volume_ii"]["surface"] == "ph-apo"
     assert payload["volumes"]["volume_ii"]["role"] == "law_application"
     assert "museum" not in payload
-    assert payload["unique_card_count"] == 206
+    assert payload["unique_card_count"] == 209
 
 
 def test_volume_command_lists_conceptual_membership(capsys):
@@ -681,8 +684,8 @@ def test_growth_goals_translate_outcomes_to_agent_machinery():
 def test_hub_catalog_completeness():
     cards = load_cards()
     payload = json.loads((ROOT / "docs" / "predictive-history-index.json").read_text(encoding="utf-8"))
-    assert len(payload["chapters"]) == 206
-    assert payload["card_count"] == 206
+    assert len(payload["chapters"]) == 209
+    assert payload["card_count"] == 209
     assert payload.get("by_series")
     assert payload.get("by_surface")
     json_ids = {chapter["source_id"] for chapter in payload["chapters"]}

@@ -7,7 +7,7 @@ Migrate or refresh chapter commentaries to methodology v2 (chapter-only L0–6 +
 ## Trigger
 
 - `NEEDS_COMMENTARY_REVIEW` bucket
-- `ph-civ commentary-status` wave queue (`migrate_from_part`, `regen_seed`, `upgrade_l2_pinned`)
+- `predictive-history commentary-status` wave queue (`migrate_from_part`, `regen_seed`, `upgrade_l2_pinned`)
 - Part apparatus or v1 scaffold detected
 
 ## Inputs
@@ -25,13 +25,13 @@ Migrate or refresh chapter commentaries to methodology v2 (chapter-only L0–6 +
 3. For Part-sourced prose: `python scripts/extract_part_section_to_chapter.py --source-id …`.
 4. For seed regen wave: `python scripts/regenerate_commentary_v2_scaffold.py --wave civ` (or `--source-id`).
 5. Pin-cite Layer 2 before claiming `l2_pinned` or higher maturity.
-6. Run `ph-civ validate` and `ph-civ commentary-status --verbose`.
+6. Run `predictive-history validate` and `predictive-history commentary-status --verbose`.
 
 ## Validation
 
 - `scaffold_version: ph_civ_commentary_canvas_v2`
 - No active `## Part apparatus` or `part_commentary_path` frontmatter
-- `ph-civ validate` passes commentary canvas checks
+- `predictive-history validate` passes commentary canvas checks
 
 ## Stop conditions
 

@@ -225,10 +225,10 @@ def render_triage_markdown(payload: dict) -> str:
         f"- **Chapters:** {payload['card_count']}",
         f"- **Generated:** {payload['generated_at']}",
         f"- **Machine SSOT:** [`{TRIAGE_JSON_REL}`](../../{TRIAGE_JSON_REL})",
-        f"- **Regenerate:** `ph-civ surface-triage`",
+        f"- **Regenerate:** `predictive-history surface-triage`",
         "",
         "Vocabulary: [public-surface-status.md](../../docs/catalogs/public-surface-status.md).",
-        "Rebuild wave queue: `ph-civ commentary-status`.",
+        "Rebuild wave queue: `predictive-history commentary-status`.",
         "",
         "## Bucket counts",
         "",
@@ -291,7 +291,7 @@ def validate_public_surface_triage(
     current = build_triage_payload(cards, root)
     if stored.get("fingerprint") != current["fingerprint"]:
         errors.append(
-            f"stale triage: {TRIAGE_JSON_REL} (run `ph-civ surface-triage` to refresh)"
+            f"stale triage: {TRIAGE_JSON_REL} (run `predictive-history surface-triage` to refresh)"
         )
     if not md_path.exists():
         errors.append(f"missing triage summary: {TRIAGE_MD_REL}")

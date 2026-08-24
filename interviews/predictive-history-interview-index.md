@@ -7,7 +7,7 @@ Catalog of interview provenance packets under `interviews/`.
 - **SSOT:** [`data/cards.jsonl`](../data/cards.jsonl) · [`data/interviews/manifest.json`](../data/interviews/manifest.json)
 - **Machine catalog:** [`predictive-history-interview-index.json`](predictive-history-interview-index.json)
 - **Full hub:** [`docs/predictive-history-index.md`](../docs/predictive-history-index.md)
-- **Regenerate:** `ph-civ index` · `python scripts/generate_ph_civ_index.py`
+- **Regenerate:** `predictive-history index` · `python scripts/generate_ph_civ_index.py`
 
 Interview provenance packets (`part: provenance`, `series: interviews`). Full volume topology and cross-surface routing live in the [chapter catalog hub](../docs/predictive-history-index.md).
 

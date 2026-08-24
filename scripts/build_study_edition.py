@@ -19,7 +19,7 @@ from study_edition_phase1 import (  # noqa: E402
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-VOL2 = ROOT / "book" / "volume-ii"
+CHAPTER_ROOT = ROOT / "lectures" / "civilization"
 PARTS_JSON = ROOT / "data" / "parts" / "volume-i-parts.json"
 SPINE_JSON = ROOT / "data" / "spines" / "homer-to-tolstoy.json"
 SITE_DATA = ROOT / "site" / "_data" / "chapters"
@@ -42,7 +42,7 @@ PART_STUDY_CHAPTERS: dict[str, list[str]] = {
 TRANSCRIPT_MARKER = "## Part I: Full transcript\n\n"
 SOURCE_ID_RE = re.compile(r"^civ-\d{2}$")
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
-SECTION_RE = re.compile(r"^### ([a-z0-9-]+)\s*$", re.MULTILINE)
+SECTION_RE = re.compile(r"^### (.+?)\s*$", re.MULTILINE)
 L2_ROW_RE = re.compile(
     r"^\|\s*(\d+)\s*\|\s*(.+?)\s*\|\s*`[^`]*#([a-z0-9-]+)`\s*\|\s*([^|]+)\|\s*([^|]+)\|",
     re.MULTILINE,
@@ -70,6 +70,11 @@ def slug_label(slug: str) -> str:
     return slug.replace("-", " ").title()
 
 
+def heading_slug(heading: str) -> str:
+    """Match the stable GitHub-style anchors used by the transcript rails."""
+    return re.sub(r"[^a-z0-9]+", "-", heading.lower()).strip("-")
+
+
 def transcript_body(text: str) -> str:
     if TRANSCRIPT_MARKER not in text:
         raise ValueError("transcript missing Part I marker")
@@ -90,7 +95,7 @@ def parse_sections(body: str) -> tuple[str, list[dict[str, str]]]:
     sections: list[dict[str, str]] = []
     i = 1
     while i < len(parts):
-        slug = parts[i].strip()
+        slug = heading_slug(parts[i].strip())
         content = parts[i + 1].strip() if i + 1 < len(parts) else ""
         sections.append({"slug": slug, "body": content})
         i += 2
@@ -183,7 +188,7 @@ def route_context(source_id: str) -> dict[str, object] | None:
 def resolve_chapter(source_id: str) -> Path:
     if not SOURCE_ID_RE.match(source_id):
         raise ValueError(f"unsupported source_id for Phase 0: {source_id}")
-    folder = VOL2 / source_id
+    folder = CHAPTER_ROOT / source_id
     if not folder.is_dir():
         raise FileNotFoundError(f"missing chapter folder: {folder.relative_to(ROOT)}")
     return folder

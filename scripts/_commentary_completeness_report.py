@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Commentary completeness report — delegates to ph-civ commentary-status."""
+"""Commentary completeness report — delegates to predictive-history commentary-status."""
 
 from __future__ import annotations
 

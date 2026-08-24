@@ -31,7 +31,7 @@
     "opening_path": "homer-to-tolstoy",
     "template": [
       "I am starting from START-HERE.md, llms.txt, and llms-full.txt. Default mode: first_tour.",
-      "Predictive History is organized as a namespace catalog hub (206 public chapters) with lecture, essay, and interview slice indexes; legacy two-volume ph-civ/ph-apo framing is deprecated.",
+      "Predictive History is organized as a namespace catalog hub (209 public chapters) with lecture, essay, and interview slice indexes; legacy two-volume ph-civ/ph-apo framing is deprecated.",
       "I will begin with the 10-route literary spine seed. The opening path is Homer-to-Tolstoy, starting at civ-07, with the guardrail that this is the literary spine route, not a side corridor.",
       "Choose one: continue the first tour; study civ-07; or switch modes."
     ]

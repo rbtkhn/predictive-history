@@ -15,8 +15,8 @@ The link action is the point: paste the folder link into ChatGPT, Claude, or Gro
 ## CLI Helper
 
 ```bash
-ph-civ link gt-24
-ph-civ link gt-24 --json
+predictive-history link gt-24
+predictive-history link gt-24 --json
 ```
 
 The helper returns the source video URL when available, the GitHub folder URL, review status, suggested LLM prompt, and a paste-ready YouTube comment.

@@ -18,9 +18,9 @@ Canonical URL: https://github.com/rbtkhn/predictive-history
 
 
 
-- **Hub:** `docs/predictive-history-index.md` · `docs/predictive-history-index.json` (206 chapters)
+- **Hub:** `docs/predictive-history-index.md` · `docs/predictive-history-index.json` (209 chapters)
 
-- **Slices:** lectures (147), essays (43), interviews (16) — see slice index paths in `data/llm-experience.json`
+- **Slices:** lectures (150), essays (43), interviews (16) — see slice index paths in `data/llm-experience.json`
 
 - **Legacy (compat):** `ph-civ` / `ph-apo` two-volume reader frame is deprecated — `docs/archive/two-volume-ph-civ-apo-deprecated.md`
 
@@ -48,7 +48,7 @@ One chapter consists of a lecture transcript (or essay/interview body), a compan
 
 7. Use `data/cards.jsonl` for public card metadata and source paths.
 
-8. Use `docs/predictive-history-index.json` (and `docs/predictive-history-index.md` for tables) when the reader needs the full catalog of all 206 public chapters — source_id lookup, paths, series, legacy surfaces, and source URLs.
+8. Use `docs/predictive-history-index.json` (and `docs/predictive-history-index.md` for tables) when the reader needs the full catalog of all 209 public chapters — source_id lookup, paths, series, legacy surfaces, and source URLs.
 
 9. If the pasted URL is a direct chapter folder, treat it as `study` mode and start with that folder's `README.md`.
 
@@ -78,7 +78,7 @@ I am starting from START-HERE.md, llms.txt, and llms-full.txt. Default mode: fir
 
 
 
-Predictive History is organized as a namespace catalog hub (206 public chapters) with lecture, essay, and interview slice indexes; legacy two-volume ph-civ/ph-apo framing is deprecated.
+Predictive History is organized as a namespace catalog hub (209 public chapters) with lecture, essay, and interview slice indexes; legacy two-volume ph-civ/ph-apo framing is deprecated.
 
 
 
@@ -162,7 +162,7 @@ This is a `study` mode entrypoint. It is not a replacement for `first_tour`, whi
 
 
 
-Use `ph-civ link <source_id>` to render a paste-ready YouTube comment and LLM prompt for folder-backed chapters.
+Use `predictive-history link <source_id>` to render a paste-ready YouTube comment and LLM prompt for folder-backed chapters.
 
 
 
@@ -170,7 +170,7 @@ Use `ph-civ link <source_id>` to render a paste-ready YouTube comment and LLM pr
 
 
 
-`docs/predictive-history-index.json` is the machine-readable catalog of all 206 public chapters. Use it when the reader asks to browse lectures, essays, or provenance interviews, resolve a `source_id`, list a series, or find transcript, commentary, folder, and YouTube or Substack links without opening every card file.
+`docs/predictive-history-index.json` is the machine-readable catalog of all 209 public chapters. Use it when the reader asks to browse lectures, essays, or provenance interviews, resolve a `source_id`, list a series, or find transcript, commentary, folder, and YouTube or Substack links without opening every card file.
 
 
 
@@ -178,7 +178,7 @@ Use `ph-civ link <source_id>` to render a paste-ready YouTube comment and LLM pr
 
 - **Markdown:** `docs/predictive-history-index.md` — hub tables by lecture series, slice pointers for essays/interviews, full alphabetical index
 
-- **Regenerate:** `ph-civ index` (auto-sync during `ph-civ validate` and publish)
+- **Regenerate:** `predictive-history index` (auto-sync during `predictive-history validate` and publish)
 
 
 
@@ -274,7 +274,7 @@ The localization roadmap also reserves `ph-civ-ru` as a future Russian-language 
 
 - `data/cards.jsonl`: public card index.
 
-- `docs/predictive-history-index.json`: unified chapter catalog (206 chapters).
+- `docs/predictive-history-index.json`: unified chapter catalog (209 chapters).
 
 - `docs/predictive-history-index.md`: human-readable chapter catalog tables.
 

@@ -8,7 +8,7 @@ Keep the ten-route spine seed, first tour, and spine tour aligned for LLM and hu
 
 - Choreography or seed JSON edits
 - `NEEDS_ROUTE_REVIEW` on provisional gt-* chapters in triage
-- `ph-civ validate` route / first-tour / llm-experience errors
+- `predictive-history validate` route / first-tour / llm-experience errors
 
 ## Inputs
 
@@ -26,13 +26,13 @@ Keep the ten-route spine seed, first tour, and spine tour aligned for LLM and hu
 3. Sync `docs/onboarding/first-tour.md` markers required by validate.
 4. Align `llm-experience.json` first_tour and first_response_contract fields.
 5. For provisional game-theory routes: add caveats; do not remove `review_status: provisional` without curator sign-off.
-6. Run `ph-civ tour --json` and `ph-civ validate`.
+6. Run `predictive-history tour --json` and `predictive-history validate`.
 
 ## Validation
 
 ```bash
-ph-civ validate
-ph-civ start --json
+predictive-history validate
+predictive-history start --json
 ```
 
 ## Stop conditions

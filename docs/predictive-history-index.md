@@ -1,13 +1,13 @@
-<!-- predictive-history-index-fingerprint: 46b915d55d0ac168 -->
+<!-- predictive-history-index-fingerprint: 7193426dbd0264f7 -->
 # Predictive History Chapter Index
 
 Canonical catalog of every public Predictive History chapter in this repository (lectures, Substack essays, and provenance interviews).
 
 - **Primary artifact:** `namespace_catalog` (namespace hub + slice indexes)
-- **Card count:** 206
-- **Transcript words (total):** 1,451,405
+- **Card count:** 209
+- **Transcript words (total):** 1,473,477
 - **SSOT:** [`data/cards.jsonl`](../data/cards.jsonl) · [`predictive-history-index.json`](predictive-history-index.json)
-- **Regenerate:** `ph-civ index` · `python scripts/generate_ph_civ_index.py` · auto-sync during `ph-civ validate` and publish
+- **Regenerate:** `predictive-history index` · `python scripts/generate_ph_civ_index.py` · auto-sync during `predictive-history validate` and publish
 
 YouTube and Substack source URLs appear in catalog tables and in [`predictive-history-index.json`](predictive-history-index.json) (`source_video_url`). **Words** counts transcript body text only (YAML frontmatter excluded).
 
@@ -17,7 +17,7 @@ Namespace catalogs beside each corpus (lectures, essays, interviews). This page 
 
 | Slice | Markdown | JSON | Cards |
 | --- | --- | --- | ---: |
-| Lectures | [lectures index](../lectures/predictive-history-lecture-index.md) | [json](../lectures/predictive-history-lecture-index.json) | 147 |
+| Lectures | [lectures index](../lectures/predictive-history-lecture-index.md) | [json](../lectures/predictive-history-lecture-index.json) | 150 |
 | Essays | [essays index](../essays/predictive-history-essay-index.md) | [json](../essays/predictive-history-essay-index.json) | 43 |
 | Interviews | [interviews index](../interviews/predictive-history-interview-index.md) | [json](../interviews/predictive-history-interview-index.json) | 16 |
 
@@ -96,7 +96,7 @@ Bridge support nodes (`sh-11`, `sh-16`, `sh-17`, `sh-18`) still carry cross-part
 
 ## Great Books
 
-**Series:** `great-books` · **Chapters:** 10
+**Series:** `great-books` · **Chapters:** 13
 
 | Source ID | Title | Review | Words | Transcript | Commentary | Folder | Video |
 | --- | --- | --- | ---: | --- | --- | --- | --- |
@@ -110,6 +110,9 @@ Bridge support nodes (`sh-11`, `sh-16`, `sh-17`, `sh-18`) still carry cross-part
 | `gb-08` | Great Books #8: The Poetry of Empire | `in_review` | 7,214 | [transcript](../lectures/great-books/gb-08/gb-08-transcript.md) | [commentary](../lectures/great-books/gb-08/gb-08-commentary.md) | [folder](../lectures/great-books/gb-08/README.md) | [video](https://www.youtube.com/watch?v=YXTRlvFIRt8) |
 | `gb-09` | Great Books #9: Dante (Re-Upload with Audio Fixed) | `in_review` | 2,089 | [transcript](../lectures/great-books/gb-09/gb-09-transcript.md) | [commentary](../lectures/great-books/gb-09/gb-09-commentary.md) | [folder](../lectures/great-books/gb-09/README.md) | [video](https://www.youtube.com/watch?v=4EZUrGPgAos) |
 | `gb-10` | Great Books #10: Dante's Hierarchy of Hell | `in_review` | 6,313 | [transcript](../lectures/great-books/gb-10/gb-10-transcript.md) | [commentary](../lectures/great-books/gb-10/gb-10-commentary.md) | [folder](../lectures/great-books/gb-10/README.md) | [video](https://www.youtube.com/watch?v=wGpdMYa2bME) |
+| `gb-11` | Great Books #11: Dante's Revolution | `in_review` | 9,117 | [transcript](../lectures/great-books/gb-11/gb-11-transcript.md) | [commentary](../lectures/great-books/gb-11/gb-11-commentary.md) | [folder](../lectures/great-books/gb-11/README.md) | [video](https://www.youtube.com/watch?v=otyUpKhpTYM) |
+| `gb-12` | Great Books #12: Dante in Paradise | `in_review` | 6,735 | [transcript](../lectures/great-books/gb-12/gb-12-transcript.md) | [commentary](../lectures/great-books/gb-12/gb-12-commentary.md) | [folder](../lectures/great-books/gb-12/README.md) | [video](https://www.youtube.com/watch?v=FspDllFoiDE) |
+| `gb-13` | Great Books #13: Gay Talese's Sparks of Light | `in_review` | 6,220 | [transcript](../lectures/great-books/gb-13/gb-13-transcript.md) | [commentary](../lectures/great-books/gb-13/gb-13-commentary.md) | [folder](../lectures/great-books/gb-13/README.md) | [video](https://www.youtube.com/watch?v=VWmPHHnZuiw) |
 
 ## Geo-Strategy
 
@@ -336,6 +339,9 @@ Provenance packets preserve old seven-volume source-family material (interviews 
 | `gb-08` | Great Books #8: The Poetry of Empire | `in_review` | 7,214 | [transcript](../lectures/great-books/gb-08/gb-08-transcript.md) | [commentary](../lectures/great-books/gb-08/gb-08-commentary.md) | [folder](../lectures/great-books/gb-08/README.md) | [video](https://www.youtube.com/watch?v=YXTRlvFIRt8) |
 | `gb-09` | Great Books #9: Dante (Re-Upload with Audio Fixed) | `in_review` | 2,089 | [transcript](../lectures/great-books/gb-09/gb-09-transcript.md) | [commentary](../lectures/great-books/gb-09/gb-09-commentary.md) | [folder](../lectures/great-books/gb-09/README.md) | [video](https://www.youtube.com/watch?v=4EZUrGPgAos) |
 | `gb-10` | Great Books #10: Dante's Hierarchy of Hell | `in_review` | 6,313 | [transcript](../lectures/great-books/gb-10/gb-10-transcript.md) | [commentary](../lectures/great-books/gb-10/gb-10-commentary.md) | [folder](../lectures/great-books/gb-10/README.md) | [video](https://www.youtube.com/watch?v=wGpdMYa2bME) |
+| `gb-11` | Great Books #11: Dante's Revolution | `in_review` | 9,117 | [transcript](../lectures/great-books/gb-11/gb-11-transcript.md) | [commentary](../lectures/great-books/gb-11/gb-11-commentary.md) | [folder](../lectures/great-books/gb-11/README.md) | [video](https://www.youtube.com/watch?v=otyUpKhpTYM) |
+| `gb-12` | Great Books #12: Dante in Paradise | `in_review` | 6,735 | [transcript](../lectures/great-books/gb-12/gb-12-transcript.md) | [commentary](../lectures/great-books/gb-12/gb-12-commentary.md) | [folder](../lectures/great-books/gb-12/README.md) | [video](https://www.youtube.com/watch?v=FspDllFoiDE) |
+| `gb-13` | Great Books #13: Gay Talese's Sparks of Light | `in_review` | 6,220 | [transcript](../lectures/great-books/gb-13/gb-13-transcript.md) | [commentary](../lectures/great-books/gb-13/gb-13-commentary.md) | [folder](../lectures/great-books/gb-13/README.md) | [video](https://www.youtube.com/watch?v=VWmPHHnZuiw) |
 | `geo-01` | Geo-Strategy #1: IranÃ¢â‚¬â„¢s Strategy Matrix | `in_review` | 5,962 | [transcript](../lectures/geo-strategy/geo-01/geo-01-transcript.md) | [commentary](../lectures/geo-strategy/geo-01/geo-01-commentary.md) | [folder](../lectures/geo-strategy/geo-01/README.md) | [video](https://www.youtube.com/watch?v=xEEpOxqdU5E) |
 | `geo-02` | Geo-Strategy #2: Christian Zionism and the Middle East Conflict | `in_review` | 5,237 | [transcript](../lectures/geo-strategy/geo-02/geo-02-transcript.md) | [commentary](../lectures/geo-strategy/geo-02/geo-02-commentary.md) | [folder](../lectures/geo-strategy/geo-02/README.md) | [video](https://www.youtube.com/watch?v=lkKrZq4YdqY) |
 | `geo-03` | Geo-Strategy #3: How Empire Is Destroying America | `in_review` | 6,264 | [transcript](../lectures/geo-strategy/geo-03/geo-03-transcript.md) | [commentary](../lectures/geo-strategy/geo-03/geo-03-commentary.md) | [folder](../lectures/geo-strategy/geo-03/README.md) | [video](https://www.youtube.com/watch?v=_blj8zKdKgA) |

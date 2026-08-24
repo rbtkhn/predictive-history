@@ -20,7 +20,7 @@ This repository is the public **Predictive History namespace catalog hub** (`nam
 
 | Path | Role |
 | --- | --- |
-| [`lectures/`](../../lectures/README.md) | Video-sourced lecture chapter packets (147) |
+| [`lectures/`](../../lectures/README.md) | Video-sourced lecture chapter packets (150) |
 | [`essays/`](../../essays/README.md) | Flat Substack essay bodies (43) |
 | [`commentaries/`](../../commentaries/README.md) | Essay commentary canvases |
 | [`interviews/`](../../interviews/README.md) | Interview provenance packets (16) |
@@ -40,7 +40,7 @@ Slice indexes: [`lectures/predictive-history-lecture-index.md`](../../lectures/p
 
 | Path | Role |
 | --- | --- |
-| [`data/cards.jsonl`](../../data/cards.jsonl) | Public card SSOT (206 chapters) |
+| [`data/cards.jsonl`](../../data/cards.jsonl) | Public card SSOT (209 chapters) |
 | [`data/routes/`](../../data/routes/) | Route seed, first tour, choreography |
 | [`data/patterns.json`](../../data/patterns.json) | Public pattern IDs |
 | [`data/llm-experience.json`](../../data/llm-experience.json) | LLM unfolding map |
@@ -63,7 +63,7 @@ Two-volume onboarding is deprecated — [`docs/archive/two-volume-ph-civ-apo-dep
 | Path | Role |
 | --- | --- |
 | [`scripts/`](../../scripts/) | Intake, patch, and maintenance scripts |
-| [`src/`](../../src/) | `ph-civ` CLI package (`civ_ph`) |
+| [`src/`](../../src/) | Supported `predictive-history` CLI implementation (Python package: `civ_ph`) |
 | [`tests/`](../../tests/) | Pytest suite |
 | [`site/`](../../site/) | Public/static site output (if active) |
 

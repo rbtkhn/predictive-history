@@ -8,7 +8,7 @@
    AI systems may increasingly support structured project memory, MCP resources, knowledge packs, or app connectors. `ph-civ` and `ph-apo` should remain easy to ingest as JSONL, Markdown, schema-valid cards, exhibit manifests, and eventually MCP resources.
 
 2. **Promptless study flows**
-   Users should not need to know the right question in advance. Commands like `ph-civ start`, `ph-civ spark`, `ph-civ path`, and `ph-civ today` should generate first questions, guided sessions, and next steps automatically.
+   Users should not need to know the right question in advance. Commands like `predictive-history start`, `predictive-history spark`, and `predictive-history path` should generate first questions, guided sessions, and next steps automatically. A future daily-orientation command should follow the same namespace.
 
 3. **Agentic reading companions**
    AI agents will be able to walk a user through a path over multiple sessions: resume Homer to Tolstoy, quiz a lecture, compare a chapter to another, or continue a study thread from prior context. This requires stable IDs, paths, review status, and typed relations.

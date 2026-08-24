@@ -7,7 +7,7 @@ Bring one chapter folder to a trustworthy public study doorway: transcript sourc
 ## Trigger
 
 - New or refreshed chapter folder
-- `NEEDS_SOURCE_FLOOR` or README marker failures in `ph-civ validate`
+- `NEEDS_SOURCE_FLOOR` or README marker failures in `predictive-history validate`
 - Curator wants a shareable GitHub folder link
 
 ## Inputs
@@ -22,14 +22,14 @@ Bring one chapter folder to a trustworthy public study doorway: transcript sourc
 2. Open or regen commentary per [commentary-canvas-upgrade.md](commentary-canvas-upgrade.md).
 3. Verify card sections: Where This Sits, Reading Posture, Historical Pressure Points, Limits of the Frame, Return Path.
 4. Ensure folder `README.md` includes study doorway markers and source video block when applicable.
-5. Run `ph-civ link <source_id>` for paste-ready packet.
-6. Regen `ph-civ index` and `ph-civ surface-triage`.
+5. Run `predictive-history link <source_id>` for paste-ready packet.
+6. Regen `predictive-history index` and `predictive-history surface-triage`.
 
 ## Validation
 
 ```bash
-ph-civ validate
-ph-civ surface-triage --verbose
+predictive-history validate
+predictive-history surface-triage --verbose
 ```
 
 ## Stop conditions
